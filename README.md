@@ -31,11 +31,14 @@ auth       required     pam_printpw.so
 
 You shouldn't have to restart anything after the installation.
 
-To test if it works, ssh to localhost (if you installed it locally) with `ssh youruser@127.0.0.1`
+To test if it works:
 
-check the ssh logs to see if your username + password is there:
-`journalctl -f -u sshd`
+- ssh to localhost (if you installed it locally) with `ssh youruser@127.0.0.1`
+- check the ssh logs to see if your username + password is there: `journalctl -f -u sshd`
+
+You should see something like this:
+![pam_log](screenshot/pam_log.png)
 
 ## Notes
 
-- It will print the password regardless of if it's the good or wrong password
+- It will print the password regardless of whether it's the good or wrong password
