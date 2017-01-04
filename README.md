@@ -7,7 +7,7 @@ user username and password in a log file when the user attempt to login.
 
 ## Why?
 
-I made this module check the username/password combination tried by bots
+I made this module to check the username/password combinations tried by bots
 endlessly trying to bruteforce every ssh ports they can find on the internet.
 But there are probably other fun ways to use it.
 
